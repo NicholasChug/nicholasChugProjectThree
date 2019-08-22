@@ -9,7 +9,28 @@
 </head>
 <body>
     <main>
-        <h1>test</h1>
+        <header class="headerSection">
+            <h1 class="mainHeaderText">CNTDWN.</h1>
+        </header>
+        <section class="infoSection">
+            <p class="explainerText">Ever find yourself sitting at your desk, wondering just how long it is until your vaction this upcoming summer? Or exactly how long you have to wait until the next Avengers movie is out? Well look no further! Insert the date down below and the display will show how long you'll have to wait!</p>
+        </section>
+        <section class="inputSection">
+            <p>Please enter your desired date as: "YYYY-MM-DD"</p>
+        
+            <form class="firstForm">
+                <input type="text" id="titleText" placeholder="Enter your timer title">
+                <input type="text" id="dateText" placeholder="Enter your date here">
+                <input type="submit" id="submitButton" value="Add Date">
+            </form>
+        </section>
+        <section class="dynamicInformationSection">
+            <span class="titleText"></span>
+            <span class="timeUntil"></span>
+        </section>
     </main>
+    <footer>Nicholas Chug &copy;</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
