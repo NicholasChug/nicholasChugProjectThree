@@ -10,8 +10,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import 'headerSection';
 @import 'footer';
 
-// Add button that stops the timer counting down
-// Work on error handling (isNan)
 // Use before and after elements for styling information section
 
 // General Styling
@@ -71,7 +69,12 @@ input[type=text], input[type=submit] {
     background-color: #f3d34a;
     height: 44px;
     border: none;
-    width: 25%;
+}
+
+.offButton {
+    background-color: #435058;
+    color: #f1f2ee;
+    border: none;
 }
 
 .submitButton:hover {

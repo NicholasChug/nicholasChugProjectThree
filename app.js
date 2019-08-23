@@ -8,8 +8,10 @@ $(document).ready(function() {
 
     let $countDownDate;
 
-    const differenceCalculator = function (differenceInTime) {
-        if (differenceInTime > 0) {
+    const differenceCalculator = function (createdDate, differenceInTime) {
+        if (isNaN(createdDate)) {
+            $(`.timeUntil`).html(`<p>Please enter a correct date!</p>`);
+        } else if (differenceInTime > 0) {
             let days = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
             let hours = Math.floor((differenceInTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((differenceInTime % (1000 * 60 * 60)) / (1000 * 60));
@@ -28,6 +30,8 @@ $(document).ready(function() {
 
         $(`.dateText`).val('');
 
+        $(`.offButtonArea`).html(`<input type='submit' class='offButton' value='Stop Timer'>`);
+
         const timer = setInterval(function () {
 
             let $timerTitle = $('#titleText').val();
@@ -37,8 +41,13 @@ $(document).ready(function() {
 
             const difference = $countDownDate - nowDate;
 
-            differenceCalculator(difference);
+            differenceCalculator($countDownDate, difference);
 
         }, 1000);
+
+        $('.offButton').on('click', function () {
+            clearInterval(timer);
+        })
     });
+    
 });

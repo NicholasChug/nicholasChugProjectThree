@@ -282,7 +282,12 @@ input[type=text], input[type=submit] {
   background-color: #f3d34a;
   height: 44px;
   border: none;
-  width: 25%;
+}
+
+.offButton {
+  background-color: #435058;
+  color: #f1f2ee;
+  border: none;
 }
 
 .submitButton:hover {
