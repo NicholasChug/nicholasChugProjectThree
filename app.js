@@ -1,18 +1,16 @@
 // TO DO
 // Do stretch goals
+// Maybe: organize into cntdwnApp object
+
+const cntdwnApp = {};
 
 $(document).ready(function() {
 
     let $countDownDate;
-    let $userCreatedDate1;
-    let $userCreatedDate2;
 
     $('.firstForm').on('submit', function(e) {
-
         e.preventDefault();
-
         $countDownDate = new Date($(`#dateText`).val()).getTime();
-
         const timer = setInterval(function () {
 
             let $timerTitle = $('#titleText').val();
@@ -37,7 +35,5 @@ $(document).ready(function() {
                 $(`.timeUntil`).html(`<p>The countdown is over!</p>`);
             };
         };
-
     });
-
 });

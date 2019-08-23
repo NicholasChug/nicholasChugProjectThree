@@ -182,3 +182,86 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%;
 }
+
+.mainHeaderText {
+  font-family: 'Rubik', sans-serif;
+  font-size: 5rem;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mainHeaderText, .titleText {
+  font-family: 'Rubik', sans-serif;
+  font-size: 6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fa-arrow-alt-circle-down {
+  color: #f3d34a;
+}
+
+.explainerText {
+  padding: 0;
+  margin: 0;
+}
+
+.infoSection, .inputSection, .displayedFirstTimer, .footerSection {
+  font-family: 'Karla', sans-serif;
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.infoSection {
+  background-color: #f3d34a;
+  padding: 5% 0;
+}
+
+.inputSection {
+  text-align: center;
+}
+
+.displayedFirstTimer {
+  padding: 2%;
+  padding-top: 0;
+  text-align: center;
+}
+
+.inputSection {
+  padding: 5% 0;
+}
+
+.submitButton {
+  background-color: #f3d34a;
+}
+
+.submitButton:hover {
+  background-color: #435058;
+  color: #f1f2ee;
+}
+
+footer {
+  padding: 2% 0;
+  text-align: center;
+  background-color: #435058;
+  color: #f1f2ee;
+}
+
+.headerSection {
+  padding: 10% 0;
+  text-align: center;
+  background-color: #f1f2ee;
+}
