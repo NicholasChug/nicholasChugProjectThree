@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/sass/style.scss">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/79a297bdda.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700&display=swap" rel="stylesheet">
@@ -22,22 +22,25 @@
         </section>
         <section class="inputSection">
             <div class="wrapper">
-                <p>Please enter your desired date as: "YYYY-MM-DD"</p>
+                <p>Please enter your desired date as: "YYYY-MM-DD HR-MM-SS"</p>
                 <form class="firstForm">
-                    <input type="text" id="titleText" placeholder="Enter your timer title">
-                    <input type="text" id="dateText" placeholder="Enter your date here">
-                    <input type="submit" id="submitButton" class="submitButton" value="Add Date">
+                    <label for="timerTitle">Timer Title:</label>
+                    <input type="text" id="titleText" name="timerTitle"placeholder="Enter your timer title">
+                    <label for="futureDate">Future Date:</label>
+                    <input type="text" id="dateText" class="dateText" name="futureDate"placeholder="Enter your date here">
+                    <label for="submitButton"></label>
+                    <input type="submit" id="submitButton" class="submitButton" name="submitButton" value="Add Date">
                 </form>
             </div>
         </section>
         <section class="displayedFirstTimer">
-            <div class="wrapper">
+            <div class="wrapper timerOn">
                 <span class="titleText"></span>
                 <span class="timeUntil"></span>
             </div>
         </section>
     </main>
-    <footer class="footerSection">Copyright &copy; Nicholas Chug</footer>
+    <footer class="footerSection">Copyright &copy; Nicholas Chug 2019</footer>
     <script src="app.js"></script>
 </body>
 </html>

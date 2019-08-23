@@ -10,6 +10,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import 'headerSection';
 @import 'footer';
 
+// Add button that stops the timer counting down
+// Work on error handling (isNan)
+// Use before and after elements for styling information section
+
+// General Styling
 h1, h2, p {
     margin: 0;
     padding: 0;
@@ -21,30 +26,9 @@ h1, h2, p {
     margin: 0 auto;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-.mainHeaderText, .titleText {
-    font-family: 'Rubik', sans-serif;
-    font-size: 6rem;
-    padding: 0;
-    margin: 0;
-}
-
-.fa-arrow-alt-circle-down {
-    color: #f3d34a;
-}
-
 .explainerText {
     padding: 0;
     margin: 0;
-}
-
-.infoSection, .inputSection, .displayedFirstTimer, .footerSection {
-    font-family: 'Karla', sans-serif;
-    font-size: 3rem;
-    line-height: 1.4;
 }
 
 .infoSection {
@@ -54,6 +38,18 @@ html {
 
 .inputSection {
     text-align: center;
+    padding: 5% 0;
+}
+
+.firstForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2% auto;
+}
+
+input[type=text], input[type=submit] {
+    margin: 2% 0;
 }
 
 .displayedFirstTimer {
@@ -62,12 +58,20 @@ html {
     text-align: center;
 }
 
-.inputSection {
-    padding: 5% 0;
+.timerOn {
+    background-color: #f3d34a;
+}
+
+.timerOff {
+    background-color: #ed1c24;
+    color: #f1f2ee;
 }
 
 .submitButton {
     background-color: #f3d34a;
+    height: 44px;
+    border: none;
+    width: 25%;
 }
 
 .submitButton:hover {
@@ -75,15 +79,4 @@ html {
     color: #f1f2ee;
 }
 
-footer {
-    padding: 2% 0;
-    text-align: center;
-    background-color: #435058;
-    color: #f1f2ee;
-}
-
-.headerSection {
-    padding: 10% 0;
-    text-align: center;
-    background-color: #f1f2ee;
-}
+@import 'responsiveDesign';

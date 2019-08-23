@@ -2,7 +2,23 @@ html {
     font-size: 62.5%;
 }
 
-.mainHeaderText {
+.mainHeaderText, 
+.titleText {
     font-family: 'Rubik', sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.infoSection,
+.inputSection,
+.displayedFirstTimer,
+.footerSection {
+    font-family: 'Karla', sans-serif;
+    font-size: 3rem;
+    line-height: 1.4;
+}
+
+label {
+    font-weight: 900;
 }
