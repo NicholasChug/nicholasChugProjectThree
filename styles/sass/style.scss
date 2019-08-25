@@ -29,11 +29,13 @@ h1, h2, p {
     margin: 0;
 }
 
+// Info Section Styling
 .infoSection {
     background-color: #f3d34a;
     padding: 5% 0;
 }
 
+// Input Section Styling
 .inputSection {
     text-align: center;
     padding: 5% 0;
@@ -50,6 +52,7 @@ input[type=text], input[type=submit] {
     margin: 2% 0;
 }
 
+// Dynamically Added Timer Styling Section
 .displayedFirstTimer {
     padding: 2%;
     padding-top: 0;

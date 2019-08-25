@@ -1,0 +1,52 @@
+@media (max-width:768px) {
+
+    .mainHeaderText,
+    .titleText {
+        font-size: 5rem;
+    }
+
+    .infoSection,
+    .inputSection,
+    .displayedFirstTimer,
+    .footerSection {
+        font-size: 2.5rem;
+    }
+
+    .firstForm {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    .mainHeaderText,
+    .titleText {
+        font-size: 4rem;
+    }
+
+    .infoSection,
+    .inputSection,
+    .displayedFirstTimer,
+    .footerSection {
+        font-size: 2rem;
+    }
+
+    .firstForm {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .firstForm {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .mainHeaderText,
+    .titleText {
+        font-size: 5rem;
+    }
+}
