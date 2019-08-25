@@ -263,6 +263,17 @@ input[type=text], input[type=submit] {
   margin: 2% 0;
 }
 
+.submitButton {
+  background-color: #f3d34a;
+  height: 44px;
+  border: none;
+}
+
+.submitButton:hover {
+  background-color: #435058;
+  color: #f1f2ee;
+}
+
 .displayedFirstTimer {
   padding: 2%;
   padding-top: 0;
@@ -278,21 +289,10 @@ input[type=text], input[type=submit] {
   color: #f1f2ee;
 }
 
-.submitButton {
-  background-color: #f3d34a;
-  height: 44px;
-  border: none;
-}
-
 .offButton {
   background-color: #435058;
   color: #f1f2ee;
   border: none;
-}
-
-.submitButton:hover {
-  background-color: #435058;
-  color: #f1f2ee;
 }
 
 @media (max-width: 768px) {

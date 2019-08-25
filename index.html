@@ -1,3 +1,4 @@
+<!-- HackerYou Project #3 - Nicholas Chug -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,23 @@
     <title>HackerYou Project #3 - Nicholas Chug</title>
 </head>
 <body>
+    <!-- Main Section of Index Page -->
     <main>
+        <!-- Header with Title and Logo -->
         <header class="headerSection">
             <h1 class="mainHeaderText">CNTDWN<i class="far fa-arrow-alt-circle-down"></i></h1>
         </header>
+        <!-- Explainer text of Web App section -->
         <section class="infoSection">
             <div class="wrapper">
                 <p class="explainerText">Ever find yourself sitting at your desk, wondering just how long it is until your vaction this upcoming summer? Or exactly how long you have to wait until the next Avengers movie is out? Well look no further! Insert the date down below and the display will show how long you'll have to wait!</p>
             </div>
         </section>
+        <!-- User Input Section -->
         <section class="inputSection">
             <div class="wrapper">
                 <p>Please enter your desired date as: "YYYY-MM-DD HR-MM-SS"</p>
+                <!-- User Input Form used to Dynamically Add Timer -->
                 <form class="firstForm">
                     <label for="timerTitle">Timer Title:</label>
                     <input type="text" id="titleText" name="timerTitle"placeholder="Enter your timer title">
@@ -33,6 +39,7 @@
                 </form>
             </div>
         </section>
+        <!-- Section Reserved for displaying user created timer -->
         <section class="displayedFirstTimer">
             <div class="wrapper timerOn">
                 <span class="titleText"></span>
@@ -41,6 +48,7 @@
             </div>
         </section>
     </main>
+    <!-- Footer Section -->
     <footer class="footerSection">Copyright &copy; Nicholas Chug 2019</footer>
     <script src="app.js"></script>
 </body>

@@ -6,11 +6,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+// Imported SASS Partials
 @import 'typography';
 @import 'headerSection';
 @import 'footer';
-
-// Use before and after elements for styling information section
 
 // General Styling
 h1, h2, p {
@@ -52,6 +51,18 @@ input[type=text], input[type=submit] {
     margin: 2% 0;
 }
 
+.submitButton {
+    background-color: #f3d34a;
+    height: 44px;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #435058;
+    color: #f1f2ee;
+}
+
+
 // Dynamically Added Timer Styling Section
 .displayedFirstTimer {
     padding: 2%;
@@ -68,21 +79,10 @@ input[type=text], input[type=submit] {
     color: #f1f2ee;
 }
 
-.submitButton {
-    background-color: #f3d34a;
-    height: 44px;
-    border: none;
-}
-
 .offButton {
     background-color: #435058;
     color: #f1f2ee;
     border: none;
-}
-
-.submitButton:hover {
-    background-color: #435058;
-    color: #f1f2ee;
 }
 
 @import 'responsiveDesign';
