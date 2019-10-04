@@ -304,10 +304,14 @@ input[type=text], input[type=submit] {
 
 .audioSection button {
   border-style: none;
-  background-color: #ffffff;
+  background-color: lightgrey;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
 }
 
 .audioSection button:hover {
+  background-color: #435058;
   color: #f3d34a;
 }
 
@@ -320,6 +324,21 @@ input[type=text], input[type=submit] {
   position: fixed;
   bottom: 0;
   right: 5px;
+}
+
+@media (max-width: 768px) {
+  .audioSection {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  audio {
+    width: 250px;
+  }
+  .audioSection {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -336,9 +355,6 @@ input[type=text], input[type=submit] {
   .firstForm {
     width: 70%;
   }
-  .audioSection {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 414px) {
@@ -354,12 +370,6 @@ input[type=text], input[type=submit] {
   }
   .firstForm {
     width: 80%;
-  }
-  audio {
-    width: 250px;
-  }
-  .audioSection {
-    font-size: 2rem;
   }
 }
 
