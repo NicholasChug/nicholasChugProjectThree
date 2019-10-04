@@ -305,8 +305,8 @@ input[type=text], input[type=submit] {
 .audioSection button {
   border-style: none;
   background-color: lightgrey;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
 }
 
@@ -338,6 +338,10 @@ input[type=text], input[type=submit] {
   }
   .audioSection {
     font-size: 2rem;
+  }
+  .audioSection button {
+    width: 40px;
+    height: 40px;
   }
 }
 
