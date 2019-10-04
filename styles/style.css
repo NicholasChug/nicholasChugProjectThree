@@ -295,6 +295,56 @@ input[type=text], input[type=submit] {
   border: none;
 }
 
+.audioSection {
+  text-align: center;
+  padding: 2.5% 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 3rem;
+}
+
+.audioSection button {
+  border-style: none;
+  background-color: lightgrey;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.audioSection button:hover {
+  background-color: #435058;
+  color: #f3d34a;
+}
+
+.fixedAudioPlayer {
+  display: none;
+}
+
+.fixedAudioPlayerVisible {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}
+
+@media (max-width: 768px) {
+  .audioSection {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  audio {
+    width: 250px;
+  }
+  .audioSection {
+    font-size: 2rem;
+  }
+  .audioSection button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .mainHeaderText,
   .titleText {

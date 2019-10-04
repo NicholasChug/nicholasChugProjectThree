@@ -85,4 +85,66 @@ input[type=text], input[type=submit] {
     border: none;
 }
 
+// ADDED STYLING SECTION FOR TECH TEST - Audio Section
+
+// For visibility purposes, I chose to use display: none and display: block for the dynamically added audio player. This was due to the fact that when I used visibility: hidden, ghost-spacing was created when the audio file appeared, making for un-accessible and un-responsiveness design. With this method, the fixed audio doesn't have a footprint when hidden. Also, display: none is compatable on all modern browsers, allowing for best practices with cross-browser usability
+
+.audioSection {
+    text-align: center;
+    padding: 2.5% 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 3rem; 
+}
+
+.audioSection button {
+    border-style: none;
+    background-color: lightgrey;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.audioSection button:hover {
+    background-color: #435058;
+    color: #f3d34a;
+}
+
+.fixedAudioPlayer {
+    display: none;
+}
+
+.fixedAudioPlayerVisible {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+// ADDED RESPONSIVE DESIGN SECTION - Audio Section
+
+// Instead of writing the following code in the _responsiveDesign partial, I chose to write it down below to allow for better readability when critiquing my work!
+
+// Basic styling ensuring that font-sizing is appropriate for window size. Colour and font-family are the same as the rest of the web application, maintaining overall design flow and aesthetic. Width property added to the audio tag on mobile sizing to allow for easier to view audio player on smaller screens
+
+@media (max-width: 768px) {
+    .audioSection {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    audio {
+        width: 250px;
+    }
+
+    .audioSection {
+        font-size: 2rem;
+    }
+
+    .audioSection button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 @import 'responsiveDesign';

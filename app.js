@@ -54,5 +54,15 @@ $(document).ready(function() {
             clearInterval(timer);
         })
     });
+
+    // Audio Player Tech Test App Logic
+
+    // For this section, I used jQuery to target when the user clicks the "listen to story" button. After preventing default, the logic targets the currently non-existent audio player and adds the class 'fixedAudioPlayerVisible' to it to display it fixed on the page. Additionally, using the .play() method on the audio tag, the audio file will automatically play to the user once the button is clicked and the audio player appears to the user. At first I tried using the autoplay attribute right on the audio html tag but found it wasn't working on chrome, safari or firefox! Having the .play() method autoplay using jQuery once again adds better cross-browser functionality for the logic
+
+    $('.playAudioButton').on('click', function(e) {
+        e.preventDefault();
+        $('.audioSection div').toggleClass('fixedAudioPlayerVisible');
+        $('audio')[0].play();
+    })
     
 });
