@@ -85,4 +85,32 @@ input[type=text], input[type=submit] {
     border: none;
 }
 
+// ADDED STYLING SECTION FOR TECH TEST
+.audioSection {
+    text-align: center;
+    padding: 2.5% 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 3rem; 
+}
+
+.audioSection button {
+    border-style: none;
+    background-color: #ffffff;
+}
+
+.audioSection button:hover {
+    color: #f3d34a;
+}
+
+.fixedAudioPlayer {
+    display: none;
+}
+
+.fixedAudioPlayerVisible {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
 @import 'responsiveDesign';

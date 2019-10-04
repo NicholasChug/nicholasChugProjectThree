@@ -54,5 +54,13 @@ $(document).ready(function() {
             clearInterval(timer);
         })
     });
+
+    // Audio Player Tech Test App Logic
+
+    $('.playAudioButton').on('click', function(e) {
+        e.preventDefault();
+        $('.audioSection div').toggleClass('fixedAudioPlayerVisible');
+        $('audio')[0].play();
+    })
     
 });

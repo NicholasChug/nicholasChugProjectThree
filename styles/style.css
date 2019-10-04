@@ -295,6 +295,33 @@ input[type=text], input[type=submit] {
   border: none;
 }
 
+.audioSection {
+  text-align: center;
+  padding: 2.5% 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 3rem;
+}
+
+.audioSection button {
+  border-style: none;
+  background-color: #ffffff;
+}
+
+.audioSection button:hover {
+  color: #f3d34a;
+}
+
+.fixedAudioPlayer {
+  display: none;
+}
+
+.fixedAudioPlayerVisible {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}
+
 @media (max-width: 768px) {
   .mainHeaderText,
   .titleText {
@@ -308,6 +335,9 @@ input[type=text], input[type=submit] {
   }
   .firstForm {
     width: 70%;
+  }
+  .audioSection {
+    font-size: 2.5rem;
   }
 }
 
@@ -324,6 +354,12 @@ input[type=text], input[type=submit] {
   }
   .firstForm {
     width: 80%;
+  }
+  audio {
+    width: 250px;
+  }
+  .audioSection {
+    font-size: 2rem;
   }
 }
 
